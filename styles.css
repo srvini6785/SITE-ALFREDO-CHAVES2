@@ -1,0 +1,156 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #6C22A6, #6C22A6 70%, #6962AD 70%, #6962AD 80%, #83C0C1 80%, #83C0C1 90%, #96E9C6 90%, #96E9C6);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #6C22A6, #6C22A6 70%, #6962AD 70%, #6962AD 80%, #83C0C1 80%, #83C0C1 90%, #96E9C6 90%, #96E9C6);
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    width: 100px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #6C22A6;
+}
+
+.alunos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.aluno {
+    width: 300px;
+    background-color: #02fff248;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.aluno:hover {
+    transform: translateY(-5px);
+}
+
+.aluno img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6C22A6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6962AD;
+}
+
+footer {
+    background: linear-gradient(135deg, #6C22A6, #6C22A6 70%, #6962AD 70%, #6962AD 80%, #83C0C1 80%, #83C0C1 90%, #96E9C6 90%, #96E9C6);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Carrossel */
+.carousel img {
+    max-width: 100%;
+    max-height: 2000px;
+    max-height: 4000px;
+    object-fit: cover;
+}
+
+/* Ajustes adicionais para o carrossel */
+.slick-slider {
+    margin-bottom: 30px;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
